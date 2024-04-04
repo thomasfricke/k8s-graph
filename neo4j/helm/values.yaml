@@ -18,5 +18,8 @@ volumes:
       requests:
         storage: 4Gi
 
+image:
+  customImage: neo4j:5.18.1
+
 env:
   NEO4J_PLUGINS: '["apoc"]'
