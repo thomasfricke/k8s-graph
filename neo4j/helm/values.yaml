@@ -2,7 +2,7 @@ neo4j:
   name: my-standalone
   resources:
     cpu: "4"
-    memory: "2Gi"
+    memory: "4Gi"
 
   # Uncomment to set the initial password
   password: "hellohello"
@@ -16,7 +16,7 @@ volumes:
     mode: defaultStorageClass
     defaultStorageClass:
       requests:
-        storage: 2Gi
+        storage: 4Gi
 
 env:
   NEO4J_PLUGINS: '["apoc"]'

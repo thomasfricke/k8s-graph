@@ -1,6 +1,6 @@
 //load rolebindingss
 
-CALL apoc.load.json("http://172.26.0.1:8001/apis/rbac.authorization.k8s.io/v1/rolebindings")
+CALL apoc.load.json("${API_SERVER}/apis/rbac.authorization.k8s.io/v1/rolebindings")
 YIELD value as rolebindinglist
 
 WITH rolebindinglist

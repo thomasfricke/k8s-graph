@@ -1,6 +1,6 @@
 //load roles
 
-CALL apoc.load.json("http://172.26.0.1:8001/apis/rbac.authorization.k8s.io/v1/roles")
+CALL apoc.load.json("${API_SERVER}/apis/rbac.authorization.k8s.io/v1/roles")
 YIELD value as rolelist
 
 WITH rolelist

@@ -1,6 +1,6 @@
 //load serviceaccounts
 
-CALL apoc.load.json("http://172.26.0.1:8001/api/v1/serviceaccounts")
+CALL apoc.load.json("${API_SERVER}/api/v1/serviceaccounts")
 YIELD value as serviceaccount
 
 WITH serviceaccount

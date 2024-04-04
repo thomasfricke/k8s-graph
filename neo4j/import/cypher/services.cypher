@@ -1,6 +1,6 @@
 // load services
 
-CALL apoc.load.json("http://172.26.0.1:8001/api/v1/services")
+CALL apoc.load.json("${API_SERVER}/api/v1/services")
 YIELD value as service
 
 UNWIND service.items AS v

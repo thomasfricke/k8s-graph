@@ -1,6 +1,6 @@
 //load pods
 
-CALL apoc.load.json("http://172.26.0.1:8001/api/v1/pods")
+CALL apoc.load.json("${API_SERVER}/api/v1/pods")
 YIELD value as pod
 
 WITH pod
