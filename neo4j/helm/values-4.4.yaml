@@ -1,0 +1,23 @@
+volumes:
+  data:
+    mode: defaultStorageClass
+
+neo4j:
+  name: my-standalone
+  resources:
+    cpu: "4"
+    memory: "4Gi"
+
+  # Uncomment to set the initial password
+  password: "hellohello"
+
+  # Uncomment to use enterprise edition
+  #edition: "enterprise"
+  acceptLicenseAgreement: "yes"
+
+apoc_config:
+  apoc.export.file.enabled: "true"
+
+env:
+  NEO4J_PLUGINS: '["apoc-core"]'
+
